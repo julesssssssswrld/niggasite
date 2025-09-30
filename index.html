@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html" id="current_page">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+    <div class="main page_main">
+        <div id="home_title" class="page_title">
+            <h1>PLATFORM</h1>
+            <h1 style="color: #3d62f5;">TECHNOLOGY</h1>
+        </div>
+        <div id="home_description" class="page_description">
+            <h2>What is a Technology Platform?</h2>
+            <p>
+                A technology platform is a structure on which users build or run successful business applications. It acts as a building block for extending and developing an application, driving innovation, and fostering business growth.
+
+Every technology platform is run by a platform owner. For example, if you are using a third-party solution like the SAP Business Technology Platform, SAP is the platform owner.
+
+Technology platforms provide business solutions to clients and other platforms. They can extend, improve, and upgrade your business software to boost speed, productivity, and service delivery.
+
+Although a technology platform is not a new development, the increased focus on the cloud and emerging technologies are boosting its importance.
+
+Modern technology platform capabilities cover tools like analytics, database and data management tools, artificial intelligence, machine learning, and the Internet of Things (IoT). It is the foundation of modern business systems.
+            </p>
+        </div>
+        <button class="button_1">
+            <a href="types.html">View Types</a>
+        </button>
+    </div>
+
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("You must log in first!");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

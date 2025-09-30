@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" id="current_page">Gallery</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </div>
+    <div class="main page_main">
+        <div id="gallery_title" class="page_title">
+            <h1>LABORATORY</h1>
+            <h1 style="color: #3d62f5;">OUTPUTS</h1>
+        </div>
+        <div id="gallery_description" class="page_description">
+
+            <div class="lab_outputs">
+                <h3>Personal Portfolio</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="personal-portfolio.html">Lab 1</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>Log In Page</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="login-page.html">Lab 2</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>Sign Up Page</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="signup-page.html">Lab 3</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>Home Page</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="home-page.html">Lab 4</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>View Types</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="view-types.html">Lab 5</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>Gallery Page</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="gallery-page.html">Lab 6</a></button>
+            </div>
+
+            <div class="lab_outputs">
+                <h3>Profile Page</h3>
+                <button class="button_1" style="margin-top: 1rem;"><a href="profile-page.html">Lab 7</a></button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("You must log in first!");
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+</html>

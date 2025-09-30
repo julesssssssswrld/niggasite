@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="profile.html" id="current_page">Profile</a></li>
+        </ul>
+    </div>
+    <div id="portfolio_main">
+        <div id="left_section">
+            <div id="contact_options">
+                <a href="https://github.com/julesssssssswrld"><img src="/Assets/github.png" alt=""></a>
+                <hr>
+                <a href="https://facebook.com/tomacasjulesiancajandab"><img src="/Assets/facebook.png" alt=""></a>
+                <hr>
+                <a href="https://instagram.com/julesssssssswrld"><img src="/Assets/instagram.png" alt=""></a>
+                <hr>
+                <a href="https://t.me/julesssssssswrld"><img src="/Assets/telegram.png" alt=""></a>
+                <hr>
+                <a href="login.html"><img src="/Assets/logout.png" alt="" onclick="logout()"></a>
+            </div>
+        </div>
+        <div id="right_section">
+            <div id="floatation_thingy">
+                <div id="img_head">
+                    <img src="/Assets/my_image.jpg" alt="" id="profile_img">
+                    <div style="flex-direction: column;">
+                        <h1 style="margin-right: 1rem;"">Hi, I'm </h1>
+                        <h1 style="color: #3d62f5;">Jules Ian</h1>
+                        <p>
+                            A software developer dedicated to building high-quality applications from the ground up. I excel in integrating modern technologies, with expertise in frontend, backend, and full-stack development, focusing on scalability and performance.
+                        </p>
+                    </div>
+                </div>
+                <div id="details">
+                    <div id="educ_bg">
+                        <h3>More About Me: </h3>
+                        <p><b>Birthday:</b> June 8, 2006</p>
+                        <p><b>Address:</b> Brgy. Dalakit, Catarman, Northern Samar</p>
+                    </div>
+                    <div id="skills_showcase">
+                        <h3>Skills:</h3>
+                        <div id="skills_container">
+                            <img src="/Assets/python.png" alt="">
+                            <img src="/Assets/html.png" alt="">
+                            <img src="/Assets/css-3.png" alt="">
+                            <img src="/Assets/figma.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            alert("You must log in first!");
+            window.location.href = "login.html";
+        }
+        
+        function logout() {
+            alert("Logout kana nigga <3");
+            localStorage.setItem("loggedIn", "false");
+        }
+    </script>
+</body>
+</html>
